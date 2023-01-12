@@ -14,7 +14,7 @@ except NotADirectoryError:
 public_key, private_key = rsa.newkeys(1024)
 public_partner = None
 
-IP = '192.168.100.100'
+IP = '192.168.100.154'
 PORT = 9191
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((IP, PORT))
@@ -25,8 +25,8 @@ client.send(public_key.save_pkcs1("PEM"))
 
 def handle_command(command, c):
     ####### Globals ########
-    global command_response
-    global response_list
+    global command_response ## response
+    global response_list ## response list []
     global menu_num
     global menu_list
     

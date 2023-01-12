@@ -6,7 +6,7 @@ import threading
 public_key, private_key = rsa.newkeys(1024)
 public_partner = None
 
-IP = '192.168.100.100'
+IP = '192.168.100.154'
 PORT = 9191
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((IP, PORT))
