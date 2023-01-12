@@ -27,8 +27,6 @@ def handle_command(command, c):
     ####### Globals ########
     global command_response ## response
     global response_list ## response list []
-    global menu_num
-    global menu_list
     
     if command == 'whoami':
         command_response = getpass.getuser()
