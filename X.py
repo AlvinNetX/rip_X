@@ -52,6 +52,8 @@ def handle_command(command, c):
                 command_response = '\n'.join(response_list)
         except Exception as e:
             command_response = str(e)
+    elif command == 'ipconfig':
+        command_response = socket.gethostbyname(socket.gethostname())
     else:
         command_response = None
         
